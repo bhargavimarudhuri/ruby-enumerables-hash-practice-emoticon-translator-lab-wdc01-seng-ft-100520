@@ -21,7 +21,7 @@ def get_japanese_emoticon(file,emoticonName)
   if emoticons.has_key?(emoticonName) 
     return emoticons[emoticonName][:japanese]
   end
-  return "apology key does not exist"
+  return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(file,japEmoticon)
