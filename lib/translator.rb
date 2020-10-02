@@ -15,12 +15,13 @@ def load_library(file)
   new_emoticons
 end
 
-def get_japanese_emoticon(file,emoticonName)
+def get_japanese_emoticon(file,englishEmoticon)
   # code goes here
   emoticons = load_library(file)
-  puts emoticons
-  if emoticons.has_key?(emoticonName) 
-    return emoticons[emoticonName][:japanese]
+  emoticons.each do |emoticonName, emoticonLangHash|
+    if emoticonLangHash[:english].eql?(englishEmoticon)
+      return [:japanese]
+    end
   end
   return "Sorry, that emoticon was not found"
 end
