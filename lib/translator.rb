@@ -29,7 +29,7 @@ def get_english_meaning(file, japEmoticon)
   emoticons = load_library(file)
   emoticons.each |emoticonName, emoticonLangHash| {
     if emoticonLangHash[:japanese] == japEmoticon
-      return emticonName
+      return emoticonName
     end
   }
   return nil
