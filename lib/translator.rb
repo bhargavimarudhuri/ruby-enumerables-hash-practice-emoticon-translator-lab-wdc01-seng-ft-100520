@@ -11,7 +11,7 @@ def load_library(file)
     lang_map[:japanese] = val[1]
     new_emoticons[key] = lang_map
   end
-  puts new_emoticons
+  // puts new_emoticons
   new_emoticons
 end
 
