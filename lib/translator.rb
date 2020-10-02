@@ -5,7 +5,7 @@ def load_library(file)
   # code goes here
   emoticons = YAML.load_file(file)
   puts emoticons
-  emoticons.map do |key, val|
+  new_emoticons = emoticons.map do |key, val|
     updated_element = {}
     lang_map = {}
     lang_map[:english] = val[0]
@@ -13,7 +13,7 @@ def load_library(file)
     updated_element[key] = lang_map
     updated_element
   end
-  emoticons
+  new_emoticons
 end
 
 def get_japanese_emoticon
