@@ -24,11 +24,13 @@ def get_japanese_emoticon(file, emoticonName)
   emoticons[emoticonName][:japanese]
 end
 
-def get_english_meaning(file, emoticonName)
+def get_english_meaning(file, japEmoticon)
   # code goes here
   emoticons = load_library(file)
-  if !emoticons.has_key?[emoticonName] 
-    return "key does not exist"
-  end
+  emoticons.each |emoticonName, emoticonLangHash| {
+    if emoticonLangHash[:japanese] == japEmoticon
+      return emticonName
+    end
+  }
   emoticons[emoticonName][:english]
 end
