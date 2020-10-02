@@ -15,7 +15,7 @@ def load_library(file)
   new_emoticons
 end
 
-def get_japanese_emoticon(file, emoticonName)
+def get_japanese_emoticon(file,emoticonName)
   # code goes here
   emoticons = load_library(file)
   if !emoticons.has_key?[emoticonName] 
@@ -24,7 +24,7 @@ def get_japanese_emoticon(file, emoticonName)
   emoticons[emoticonName][:japanese]
 end
 
-def get_english_meaning(file, japEmoticon)
+def get_english_meaning(file,japEmoticon)
   # code goes here
   emoticons = load_library(file)
   emoticons.each do |emoticonName, emoticonLangHash|
