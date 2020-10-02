@@ -13,6 +13,7 @@ def load_library(file)
     updated_element[key] = lang_map
     new_emoticons.push(updated_element)
   end
+  puts new_emoticons
   new_emoticons
 end
 
