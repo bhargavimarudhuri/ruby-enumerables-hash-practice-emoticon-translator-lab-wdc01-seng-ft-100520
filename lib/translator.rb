@@ -32,5 +32,5 @@ def get_english_meaning(file, japEmoticon)
       return emticonName
     end
   }
-  emoticons[emoticonName][:english]
+  return nil
 end
