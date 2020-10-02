@@ -15,10 +15,15 @@ def load_library(file)
   new_emoticons
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file, emoticonName)
   # code goes here
+  emoticons = load_library(file)
+  if emoticons[emoticonName]
+  emoticons[emoticonName][:japanese]
 end
 
 def get_english_meaning
   # code goes here
+  emoticons = load_library(file)
+  emoticons[emoticonName][:japanese]
 end
