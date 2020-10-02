@@ -3,6 +3,7 @@
 def load_library(file)
   # code goes here
   emoticons = YAML.load_file(file)
+  puts emoticons
   emoticons.map do |key, val|
     updated_element = {}
     lang_map = {}
