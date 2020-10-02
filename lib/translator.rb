@@ -1,8 +1,8 @@
 # require modules here
 
-def load_library
+def load_library(file)
   # code goes here
-  emoticons = YAML.load_file('emoticons.yml')
+  emoticons = YAML.load_file(file)
   emoticons.map do |key, val|
     updated_element = {}
     lang_map = {}
