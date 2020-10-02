@@ -18,6 +18,7 @@ end
 def get_japanese_emoticon(file,emoticonName)
   # code goes here
   emoticons = load_library(file)
+  puts emoticons
   if emoticons.has_key?(emoticonName) 
     return emoticons[emoticonName][:japanese]
   end
