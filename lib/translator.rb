@@ -18,10 +18,10 @@ end
 def get_japanese_emoticon(file,emoticonName)
   # code goes here
   emoticons = load_library(file)
-  if !emoticons.has_key?(emoticonName) 
-    return "apology key does not exist"
+  if emoticons.has_key?(emoticonName) 
+    return emoticons[emoticonName][:japanese]
   end
-  emoticons[emoticonName][:japanese]
+  return "apology key does not exist"
 end
 
 def get_english_meaning(file,japEmoticon)
