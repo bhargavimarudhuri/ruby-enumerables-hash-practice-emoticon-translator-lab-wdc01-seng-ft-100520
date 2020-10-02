@@ -32,5 +32,5 @@ def get_english_meaning(file,japEmoticon)
       return emoticonName
     end
   end
-  return nil
+  return "Sorry, that emoticon was not found"
 end
